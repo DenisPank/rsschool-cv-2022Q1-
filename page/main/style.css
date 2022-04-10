@@ -268,3 +268,32 @@ h5 {
   background: transparent;
 }
 /* pets */
+/* help */
+.help {
+  padding: 4.2vw 0 5.21vw;
+}
+.help__title {
+  color: rgba(84, 84, 84, 1);
+  max-width: 19.7vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.help__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.help__item {
+  margin: 0 3.13vw;
+  margin-top: 2.7vw;
+}
+.help__text {
+  margin-top: 1.566vw;
+  color: rgba(84, 84, 84, 1);
+}
+.help__item-img {
+  height: 3.1vw;
+  display: flex;
+  justify-content: center;
+}
+/* help */
