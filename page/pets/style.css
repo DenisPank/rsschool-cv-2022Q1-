@@ -3,9 +3,6 @@ body {
   padding: 0;
   font-family: "Arial";
   font-size: 1vw;
-}
-
-body {
   height: 100%;
 }
 
@@ -76,16 +73,16 @@ h2 {
   font-size: 2.293em;
 }
 h3 {
-  font-size: 35px;
+  font-size: 1.83em;
   letter-spacing: 0.06em;
 }
 h4 {
-  font-size: 20px;
+  font-size: 1.05em;
   line-height: 1.15em;
   letter-spacing: 0.06em;
 }
 h5 {
-  font-size: 15px;
+  font-size: 0.781em;
   line-height: 1.1em;
   letter-spacing: 0.06em;
 }
@@ -253,6 +250,7 @@ h5 {
   border-radius: 9px;
   padding-bottom: 1.569vw;
 }
+
 .pets__name {
   text-align: center;
   color: rgba(84, 84, 84, 1);
@@ -296,6 +294,9 @@ h5 {
 .about__button.btn.next:hover {
   background-color: rgba(241, 205, 179, 1);
 }
+.about__img-wrap {
+  width: 15.6vw;
+}
 /* pets */
 /* footer */
 .footer {
@@ -320,7 +321,7 @@ h5 {
 .footer__link {
   font-family: "Georgia Regular";
   margin-left: 1.045vw;
-  font-size: 20px;
+  font-size: 1.05em;
   line-height: 1.15em;
   letter-spacing: 0.06em;
   color: rgba(241, 205, 179, 1);
@@ -332,5 +333,9 @@ h5 {
 .footer__social,
 .footer__address {
   margin-top: 1vw;
+}
+.footer__img-wrap {
+  max-width: 15.6vw;
+  width: 100%;
 }
 /* footer */
