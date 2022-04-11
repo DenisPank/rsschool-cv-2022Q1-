@@ -336,3 +336,36 @@ h5 {
   font-size: 0.628em;
 }
 /* donation */
+/* footer */
+.footer {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
+    linear-gradient(0deg, #211f20, #211f20);
+  padding-top: 2.059vw;
+}
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__social {
+  max-width: 15.7vw;
+}
+.footer__address {
+  max-width: 15.7vw;
+}
+.footer__info {
+  display: flex;
+  margin-top: 2.1vw;
+}
+.footer__link {
+  font-family: "Georgia Regular";
+  margin-left: 1.045vw;
+  font-size: 20px;
+  line-height: 1.15em;
+  letter-spacing: 0.06em;
+  color: rgba(241, 205, 179, 1);
+}
+.footer__icon {
+  min-width: 1.19vw;
+  width: 100%;
+}
+/* footer */
