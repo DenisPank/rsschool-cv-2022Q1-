@@ -5,7 +5,6 @@ body {
   font-size: 1vw;
 }
 
-html,
 body {
   height: 100%;
 }
@@ -116,7 +115,7 @@ h5 {
     linear-gradient(0deg, #211f20, #211f20);
 }
 .header__logo-wrap {
-  max-width: 15%;
+  max-width: 16%;
   width: 100%;
 }
 .header__navbar {
@@ -149,8 +148,14 @@ h5 {
 .header__link:hover::after {
   opacity: 1;
 }
+.header__link.active::after {
+  opacity: 1;
+}
 .header__button {
+  width: fit-content;
   padding: 0.88vw 2.36vw;
+  background-color: rgba(241, 205, 179, 1);
+  transition: background-color 0.4s ease;
 }
 .header__text {
   padding: 9.12% 0;
@@ -173,7 +178,21 @@ h5 {
   max-width: 58%;
   width: 100%;
 }
-
+.header__logo-first {
+  font-family: "Georgia Regular";
+  font-size: 1.7em;
+  letter-spacing: 0.06em;
+  color: rgba(241, 205, 179, 1);
+}
+.header__logo-second {
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-size: 0.68em;
+}
+.header__button:hover {
+  background-color: rgba(253, 220, 196, 1);
+}
 /* header */
 /* about */
 .about {
@@ -197,7 +216,7 @@ h5 {
 /* about */
 /* pets */
 .pets {
-  padding: 4.2vw 0 5.21vw;
+  padding: 3.2vw 0 5.21vw;
   background-color: rgba(246, 246, 246, 1);
 }
 
@@ -212,8 +231,13 @@ h5 {
   position: relative;
 }
 .about__button {
+  width: fit-content;
   margin: 0 auto;
   padding: 0.834vw 2.33vw;
+  transition: background-color 0.4s ease;
+}
+.about__button:hover {
+  background-color: rgba(253, 220, 196, 1);
 }
 .pets__body {
   display: flex;
@@ -225,7 +249,15 @@ h5 {
   width: 2.71vw;
   height: 2.71vw;
   position: relative;
+  cursor: pointer;
+  transition: background-color, border-color 0.4s ease;
 }
+
+.pets__arrow-wrap:hover {
+  background-color: #fddcc4;
+  border-color: #fddcc4;
+}
+
 .pets__arrow {
   width: 0.73vw;
   position: absolute;
@@ -234,6 +266,7 @@ h5 {
   transform: translate(-50%, -50%);
 }
 .pets__navig {
+  z-index: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -245,6 +278,8 @@ h5 {
   transform: rotate(180deg);
 }
 .pets__body {
+  position: relative;
+  z-index: 1;
   width: 82.5%;
   margin: 0 auto;
 }
@@ -252,6 +287,7 @@ h5 {
   background-color: #fff;
   border-radius: 9px;
   padding-bottom: 1.569vw;
+  cursor: pointer;
 }
 .pets__name {
   text-align: center;
@@ -266,6 +302,14 @@ h5 {
   padding: 0.76vw 2.38vw;
   font-size: 0.833em;
   background: transparent;
+  transition: background-color, border-color, box-shadow 0.4s ease;
+}
+.pets__card:hover .pets__more {
+  background-color: rgba(253, 220, 196, 1);
+  border-color: rgba(253, 220, 196, 1);
+}
+.pets__more:hover {
+  box-shadow: 0px 0 20px 0px #f1cdb3;
 }
 /* pets */
 /* help */
@@ -299,7 +343,7 @@ h5 {
 /* help */
 /* donation */
 .donation {
-  padding: 4.2vw 0 5.21vw;
+  padding: 4.7vw 0 5.71vw;
   background-color: rgba(246, 246, 246, 1);
 }
 .donation__wrap {
@@ -367,5 +411,9 @@ h5 {
 .footer__icon {
   min-width: 1.19vw;
   width: 100%;
+}
+.footer__social,
+.footer__address {
+  margin-top: 1vw;
 }
 /* footer */

@@ -13,24 +13,25 @@
       <div class="container">
         <nav class="header__navbar">
           <div class="header__logo-wrap">
-            <img
-              src="../../assest/icon/logo-svg.svg"
-              alt="Logo"
-              class="header__logo"
-            />
+            <a href="index.html">
+              <div class="header__logo-first">Cozy House</div>
+              <div class="header__logo-second">Shelter for pets in Boston</div>
+            </a>
           </div>
           <ul class="header__menu">
             <li class="header__item text-l">
-              <a class="header__link" href="#"> About the shelter </a>
+              <a class="header__link active" href="index.html">
+                About the shelter
+              </a>
             </li>
             <li class="header__item text-l">
-              <a class="header__link" href="#"> Our pets </a>
+              <a class="header__link" href="../pets/ourPets.html"> Our pets </a>
             </li>
             <li class="header__item text-l">
-              <a class="header__link" href="#"> Help the shelter </a>
+              <a class="header__link" href="#help"> Help the shelter </a>
             </li>
             <li class="header__item text-l">
-              <a class="header__link" href="#"> Contacts </a>
+              <a class="header__link" href="#footer"> Contacts </a>
             </li>
           </ul>
         </nav>
@@ -42,7 +43,7 @@
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </p>
-            <button class="header__button btn">Make a friend</button>
+            <a href="#pets" class="header__button btn">Make a friend</a>
           </div>
           <div class="header__banner-wrap">
             <img
@@ -87,7 +88,7 @@
             </div>
           </div>
         </section>
-        <section class="pets">
+        <section id="pets" class="pets">
           <div class="container">
             <h3 class="pets__title">Our friends who are looking for a house</h3>
             <div class="pets__slider">
@@ -143,10 +144,12 @@
                 </div>
               </div>
             </div>
-            <button class="about__button btn">Get to know the rest</button>
+            <a href="../pets/ourPets.html" class="about__button btn"
+              >Get to know the rest</a
+            >
           </div>
         </section>
-        <section class="help">
+        <section id="help" class="help">
           <div class="container">
             <h3 class="help__title">How you can help our shelter</h3>
             <div class="help__list">
@@ -260,7 +263,11 @@
                     src="../../assest/icon/credit-card.svg"
                     alt="card"
                   />
-                  <h4 class="donation__btn-text">8380 2880 8028 8791 7435</h4>
+                  <h4 class="donation__btn-text">
+                    <a class="donation__btn-text" href="#">
+                      8380 2880 8028 8791 7435
+                    </a>
+                  </h4>
                 </button>
                 <p class="donation__info">
                   Legal information and lorem ipsum dolor sit amet, consectetur
@@ -273,43 +280,58 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <div class="container">
           <div class="footer__wrap">
             <div class="footer__social">
               <h3 class="footer__title">For questions and suggestions</h3>
               <div class="footer__info">
                 <div class="footer__icon-wrap">
-                  <img
-                    src="../../assest/icon/mail.svg"
-                    alt="Icon"
-                    class="footer__icon"
-                  />
+                  <a href="mailto:email@shelter.com">
+                    <img
+                      src="../../assest/icon/mail.svg"
+                      alt="Icon"
+                      class="footer__icon"
+                    />
+                  </a>
                 </div>
-                <a href="#" class="footer__link">email@shelter.com</a>
+                <a href="mailto:email@shelter.com">
+                  <div class="footer__link">email@shelter.com</div>
+                </a>
               </div>
               <div class="footer__info">
                 <div class="footer__icon-wrap">
-                  <img
-                    src="../../assest/icon/phone.svg"
-                    alt="Icon"
-                    class="footer__icon"
-                  />
+                  <a href="tel:+13 674 567 75 54">
+                    <img
+                      src="../../assest/icon/phone.svg"
+                      alt="Icon"
+                      class="footer__icon"
+                    />
+                  </a>
                 </div>
-                <a href="#" class="footer__link">+13 674 567 75 54</a>
+                <a href="tel:+13 674 567 75 54">
+                  <div class="footer__link">+13 674 567 75 54</div>
+                </a>
               </div>
             </div>
             <div class="footer__address">
               <h3 class="footer__title">We are waiting for your visit</h3>
               <div class="footer__info">
-                <div class="footer__icon-wrap">
+                <a
+                  href="https://www.google.com/maps/@-34.7519646,-58.2632918,21z?hl=ru"
+                  target="_blank"
+                  class="footer__icon-wrap"
+                >
                   <img
                     src="../../assest/icon/pin.svg"
                     alt="Icon"
                     class="footer__icon"
                   />
-                </div>
-                <a href="#" class="footer__link"
+                </a>
+                <a
+                  href="https://www.google.com/maps/@-34.7519646,-58.2632918,21z?hl=ru"
+                  target="_blank"
+                  class="footer__link"
                   >1 Central Street, Boston (entrance from the store)</a
                 >
               </div>
