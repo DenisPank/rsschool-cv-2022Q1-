@@ -1,19 +1,3 @@
-:root {
-  --text-h1: 2.293em;
-  --text-h3: 1.83em;
-  --text-h4: 1.05em;
-  --text-h5: 0.781em;
-  --text-l: 0.782em;
-  --text-s: 12px;
-  --text-btn: 0.886em;
-  --text-logo: 1.7em;
-  --text-logo-subtitle: 0.68em;
-  --text-pets-more: 0.833em;
-  --text-donation-info: 0.628em;
-  --text-footer-link: 1.05em;
-  --text-pets-name: 1.05em;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -40,7 +24,6 @@ img {
   max-width: 100%;
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
   object-fit: contain;
   display: block;
 }
@@ -87,26 +70,26 @@ h6 {
 
 h1,
 h2 {
-  font-size: var(--text-h1);
+  font-size: 2.293em;
 }
 h3 {
-  font-size: var(--text-h3);
+  font-size: 1.83em;
   letter-spacing: 0.06em;
 }
 h4 {
-  font-size: var(--text-h4);
+  font-size: 1.05em;
   line-height: 1.15em;
   letter-spacing: 0.06em;
 }
 h5 {
-  font-size: var(--text-h5);
+  font-size: 0.781em;
   line-height: 1.1em;
   letter-spacing: 0.06em;
 }
 
 .text-l {
   line-height: 1.6em;
-  font-size: var(--text-l);
+  font-size: 0.782em;
 }
 .text-s {
   line-height: 1.5em;
@@ -117,42 +100,34 @@ h5 {
   background-color: rgba(241, 205, 179, 1);
   border-radius: 100px;
   font-family: "Georgia Regular";
-  font-size: var(--text-btn);
+  font-size: 0.886em;
   letter-spacing: 0.06em;
   color: rgba(41, 41, 41, 1);
   cursor: pointer;
 }
-.header__burger,
-#burger {
-  display: none;
-}
 /* header */
 .header {
   z-index: 9999999;
-  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   padding: 1.6% 0;
   background: rgba(255, 255, 255, 1);
 }
 .header__logo-wrap {
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  max-width: 16%;
   width: 100%;
 }
 .header__logo-first {
   font-family: "Georgia Regular";
-  font-size: var(--text-logo);
+  font-size: 1.7em;
   letter-spacing: 0.06em;
   color: rgba(84, 84, 84, 1);
 }
 .header__logo-second {
-  text-align: center;
   margin-top: 10px;
   color: rgba(41, 41, 41, 1);
   letter-spacing: 0.1em;
-  font-size: var(--text-logo-subtitle);
+  font-size: 0.68em;
 }
 .header__navbar {
   display: flex;
@@ -277,8 +252,6 @@ h5 {
 }
 
 .pets__name {
-  font-size: var(--text-pets-name);
-  font-family: "Georgia Regular";
   text-align: center;
   color: rgba(84, 84, 84, 1);
   text-transform: capitalize;
@@ -289,7 +262,7 @@ h5 {
   border: 2px solid #f1cdb3;
   border-radius: 100px;
   padding: 0.76vw 2.38vw;
-  font-size: var(--text-pets-more);
+  font-size: 0.833em;
   background: transparent;
   transition: background-color, border-color, box-shadow 0.4s ease;
 }
@@ -348,7 +321,7 @@ h5 {
 .footer__link {
   font-family: "Georgia Regular";
   margin-left: 1.045vw;
-  font-size: var(--text-footer-link);
+  font-size: 1.05em;
   line-height: 1.15em;
   letter-spacing: 0.06em;
   color: rgba(241, 205, 179, 1);
