@@ -1,3 +1,19 @@
+:root {
+  --text-h1: 2.293em;
+  --text-h3: 1.83em;
+  --text-h4: 1.05em;
+  --text-h5: 0.781em;
+  --text-l: 0.782em;
+  --text-s: 12px;
+  --text-btn: 0.886em;
+  --text-logo: 1.7em;
+  --text-logo-subtitle: 0.68em;
+  --text-pets-more: 0.833em;
+  --text-donation-info: 0.628em;
+  --text-footer-link: 1.05em;
+  --text-pets-name: 1.05em;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -70,37 +86,37 @@ h6 {
 
 h1,
 h2 {
-  font-size: 2.293em;
+  font-size: var(--text-h1);
 }
 h3 {
-  font-size: 1.83em;
+  font-size: var(--text-h3);
   letter-spacing: 0.06em;
 }
 h4 {
-  font-size: 1.05em;
+  font-size: var(--text-h4);
   line-height: 1.15em;
   letter-spacing: 0.06em;
 }
 h5 {
-  font-size: 0.781em;
+  font-size: var(--text-h5);
   line-height: 1.1em;
   letter-spacing: 0.06em;
 }
 
 .text-l {
   line-height: 1.6em;
-  font-size: 0.782em;
+  font-size: var(--text-l);
 }
 .text-s {
   line-height: 1.5em;
-  font-size: 12px;
+  font-size: var(--text-s);
 }
 .btn {
   display: block;
   background-color: rgba(241, 205, 179, 1);
   border-radius: 100px;
   font-family: "Georgia Regular";
-  font-size: 0.886em;
+  font-size: var(--text-btn);
   letter-spacing: 0.06em;
   color: rgba(41, 41, 41, 1);
   cursor: pointer;
@@ -108,9 +124,6 @@ h5 {
 /* header */
 .header {
   padding: 3.2% 0 0;
-  /* background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
-    linear-gradient(0deg, #211f20, #211f20),
-    url("../../assest/image/noise_transparent.png"); */
 }
 .notonly {
   position: relative;
@@ -130,7 +143,7 @@ h5 {
   z-index: -999;
 }
 .header__logo-wrap {
-  max-width: 16%;
+  max-width: 20%;
   width: 100%;
 }
 .header__navbar {
@@ -195,7 +208,7 @@ h5 {
 }
 .header__logo-first {
   font-family: "Georgia Regular";
-  font-size: 1.7em;
+  font-size: var(--text-logo);
   letter-spacing: 0.06em;
   color: rgba(241, 205, 179, 1);
 }
@@ -203,7 +216,7 @@ h5 {
   margin-top: 10px;
   color: #fff;
   letter-spacing: 0.1em;
-  font-size: 0.68em;
+  font-size: var(--text-logo-subtitle);
 }
 .header__button:hover {
   background-color: rgba(253, 220, 196, 1);
@@ -314,13 +327,16 @@ h5 {
   color: rgba(84, 84, 84, 1);
   text-transform: capitalize;
   margin: 1.6vw 0;
+  font-size: var(--text-pets-name);
+  font-family: "Georgia Regular";
+  letter-spacing: 0.06em;
 }
 .pets__more {
   margin: 0 auto;
   border: 2px solid #f1cdb3;
   border-radius: 100px;
   padding: 0.76vw 2.38vw;
-  font-size: 0.833em;
+  font-size: var(--text-pets-more);
   background: transparent;
   transition: background-color, border-color, box-shadow 0.4s ease;
 }
@@ -397,7 +413,7 @@ h5 {
 }
 .donation__info {
   color: rgba(178, 178, 178, 1);
-  font-size: 0.628em;
+  font-size: var(--text-donation-info);
 }
 .donation__img-wrap {
   width: 26.3vw;
@@ -426,7 +442,7 @@ h5 {
 .footer__link {
   font-family: "Georgia Regular";
   margin-left: 1.045vw;
-  font-size: 1.05em;
+  font-size: var(--text-footer-link);
   line-height: 1.15em;
   letter-spacing: 0.06em;
   color: rgba(241, 205, 179, 1);

@@ -1,3 +1,19 @@
+:root {
+  --text-h1: 2.293em;
+  --text-h3: 1.83em;
+  --text-h4: 1.05em;
+  --text-h5: 0.781em;
+  --text-l: 0.782em;
+  --text-s: 12px;
+  --text-btn: 0.886em;
+  --text-logo: 1.7em;
+  --text-logo-subtitle: 0.68em;
+  --text-pets-more: 0.833em;
+  --text-donation-info: 0.628em;
+  --text-footer-link: 1.05em;
+  --text-pets-name: 1.05em;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -70,14 +86,14 @@ h6 {
 
 h1,
 h2 {
-  font-size: 2.293em;
+  font-size: var(--text-h1);
 }
 h3 {
-  font-size: 1.83em;
+  font-size: var(--text-h3);
   letter-spacing: 0.06em;
 }
 h4 {
-  font-size: 1.05em;
+  font-size: var(--text-h4);
   line-height: 1.15em;
   letter-spacing: 0.06em;
 }
@@ -321,7 +337,7 @@ h5 {
 .footer__link {
   font-family: "Georgia Regular";
   margin-left: 1.045vw;
-  font-size: 1.05em;
+  font-size: var(--text-footer-link);
   line-height: 1.15em;
   letter-spacing: 0.06em;
   color: rgba(241, 205, 179, 1);
