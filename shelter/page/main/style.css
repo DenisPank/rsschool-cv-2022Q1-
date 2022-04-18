@@ -45,9 +45,9 @@ img {
   display: block;
 }
 
-}
 .footer {
   flex: 0 0 auto;
+}
 
 .container {
   max-width: 67.3%;
