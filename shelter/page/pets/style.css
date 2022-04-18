@@ -98,14 +98,14 @@ h4 {
   letter-spacing: 0.06em;
 }
 h5 {
-  font-size: 0.781em;
+  font-size: var(--text-h5);
   line-height: 1.1em;
   letter-spacing: 0.06em;
 }
 
 .text-l {
   line-height: 1.6em;
-  font-size: 0.782em;
+  font-size: var(--text-l);
 }
 .text-s {
   line-height: 1.5em;
@@ -116,7 +116,7 @@ h5 {
   background-color: rgba(241, 205, 179, 1);
   border-radius: 100px;
   font-family: "Georgia Regular";
-  font-size: 0.886em;
+  font-size: var(--text-btn);
   letter-spacing: 0.06em;
   color: rgba(41, 41, 41, 1);
   cursor: pointer;
@@ -130,20 +130,21 @@ h5 {
   background: rgba(255, 255, 255, 1);
 }
 .header__logo-wrap {
-  max-width: 16%;
+  max-width: max-content;
   width: 100%;
 }
 .header__logo-first {
   font-family: "Georgia Regular";
-  font-size: 1.7em;
+  font-size: var(--text-logo);
   letter-spacing: 0.06em;
   color: rgba(84, 84, 84, 1);
 }
 .header__logo-second {
+  text-align: center;
   margin-top: 10px;
   color: rgba(41, 41, 41, 1);
   letter-spacing: 0.1em;
-  font-size: 0.68em;
+  font-size: var(--text-logo-subtitle);
 }
 .header__navbar {
   display: flex;
@@ -268,6 +269,8 @@ h5 {
 }
 
 .pets__name {
+  font-size: var(--text-pets-name);
+  font-family: "Georgia Regular";
   text-align: center;
   color: rgba(84, 84, 84, 1);
   text-transform: capitalize;
@@ -278,7 +281,7 @@ h5 {
   border: 2px solid #f1cdb3;
   border-radius: 100px;
   padding: 0.76vw 2.38vw;
-  font-size: 0.833em;
+  font-size: var(--text-pets-more);
   background: transparent;
   transition: background-color, border-color, box-shadow 0.4s ease;
 }
