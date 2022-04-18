@@ -121,6 +121,10 @@ h5 {
   color: rgba(41, 41, 41, 1);
   cursor: pointer;
 }
+.header__burger,
+#burger {
+  display: none;
+}
 /* header */
 .header {
   z-index: 9999999;
