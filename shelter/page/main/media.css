@@ -93,6 +93,8 @@
   }
   .donation__btn {
     margin: 1.56vw 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 0.78vw 1.17vw;
   }
@@ -138,6 +140,8 @@
     padding-top: 60px;
   }
   .header__logo-wrap {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
   }
   .header__content {
@@ -245,6 +249,8 @@
   }
   .donation__btn {
     margin: 20px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 0.78vw 1.17vw;
   }

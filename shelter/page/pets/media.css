@@ -95,6 +95,8 @@
   }
   .donation__btn {
     margin: 1.56vw 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 0.78vw 1.17vw;
   }
