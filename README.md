@@ -1,1 +1,1 @@
-https://DenisPank.github.io/rsschool-cv/
+DenisPank-JS2022Q1
