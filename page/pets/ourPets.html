@@ -12,13 +12,10 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header__navbar">
-          <label for="burger" class="header__burger">
-            <span></span>
-          </label>
-          <input id="burger" type="checkbox"></input>
+        <nav class="header__navbar" id="Menu">
+          <button id="BG" for="burger" class="header__burger"></button>
           <div class="header__logo-wrap">
-            <a href="../../page/main/index.html">
+            <a href="index.html">
               <div class="header__logo-first">Cozy House</div>
               <div class="header__logo-second">Shelter for pets in Boston</div>
             </a>
@@ -49,7 +46,7 @@
         <section class="pets">
           <div class="container">
             <h3 class="pets__title">Our friends who are looking for a house</h3>
-            <div class="pets__slider">
+            <div class="pets__slider" id="CP">
               <div class="pets__body">
                 <div class="pets__item">
                   <div class="pets__card">
@@ -138,6 +135,42 @@
                     <p class="pets__name">woody</p>
                     <button class="pets__more btn">Learn more</button>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="pets__bg" id="PetsBG">
+              <div class="pets__popap">
+                <div class="pets__popap-photo">
+                  <img src="../../assest/image/pets-jennifer.jpg" alt="Photo" />
+                </div>
+                <div class="pets__popap-text">
+                  <h3 class="pets__name-popap">Jennifer</h3>
+                  <h4 class="pets__type">Dog - Labrador</h4>
+                  <p class="pets__description">
+                    Jennifer is a sweet 2 months old Labrador that is patiently
+                    waiting to find a new forever home. This girl really enjoys
+                    being able to go outside to run and play, but won't hesitate
+                    to play up a storm in the house if she has all of her
+                    favorite toys.
+                  </p>
+                  <ul class="pets__list">
+                    <li class="pets__option">
+                      <span class="pets__option-text">Age:</span
+                      ><span class="pets__option-answer">2 months</span>
+                    </li>
+                    <li class="pets__option">
+                      <span class="pets__option-text">Age:</span
+                      ><span class="pets__option-answer">2 months</span>
+                    </li>
+                    <li class="pets__option">
+                      <span class="pets__option-text">Age:</span
+                      ><span class="pets__option-answer">2 months</span>
+                    </li>
+                    <li class="pets__option">
+                      <span class="pets__option-text">Age:</span
+                      ><span class="pets__option-answer">2 months</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

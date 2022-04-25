@@ -287,8 +287,26 @@
   .pets__arrow {
     width: 14px;
   }
+  .pets__popap {
+    max-width: 680px;
+  }
+  .pets__popap-text {
+    padding: 10px 10px 0 10px;
+  }
 }
 @media screen and (max-width: 767px) {
+  .pets__popap-photo {
+    display: none;
+  }
+  .pets__popap {
+    max-width: 240px;
+  }
+  .pets__popap-text {
+    padding: 10px;
+  }
+  .pets__list {
+    margin-left: 10px;
+  }
   :root {
     --text-h1: 25px;
     --text-h3: 25px;

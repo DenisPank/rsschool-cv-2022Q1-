@@ -3,10 +3,14 @@ let burger = menuElem.querySelector(".header__burger");
 
 burger.onclick = function () {
   menuElem.classList.toggle("open");
+  document.body.classList.toggle("block");
 };
 menuElem.onclick = function (event) {
   let target = event.target;
-  if (target.tagName == "A") menuElem.classList.toggle("open");
+  if (target.tagName == "A") {
+    menuElem.classList.toggle("open");
+    document.body.classList.toggle("block");
+  }
 };
 
 const pet = {
@@ -30,16 +34,22 @@ let cardPest = sliderPets.querySelector(".pets__card");
 
 sliderPets.onclick = function (event) {
   let target = event.target;
-  if (target.className == "pets__card") sliderPets.classList.toggle("open");
+  if (
+    target.className == "pets__photo" ||
+    target.className == "pets__name" ||
+    target.className == "pets__more btn"
+  ) {
+    sliderPets.classList.toggle("open");
+    document.body.classList.toggle("block");
+  }
 };
-
-// cardPest.onclick = function () {
-//   sliderPets.classList.toggle("open");
-// };
 
 let closeCard = document.getElementById("PetsBG");
 
 closeCard.onclick = function (event) {
   let target = event.target;
-  if (target.className != "pets__popap") sliderPets.classList.toggle("open");
+  if (target.className != "pets__popap") {
+    sliderPets.classList.toggle("open");
+    document.body.classList.toggle("block");
+  }
 };
