@@ -356,6 +356,89 @@ h5 {
 .pets__more:hover {
   box-shadow: 0px 0 20px 0px #f1cdb3;
 }
+.pets__popap {
+  z-index: 99999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 900px;
+  border-radius: 9px;
+}
+.pets__bg {
+  display: none;
+  z-index: 9999;
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0.6);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pets__popap::after {
+  content: "";
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  height: 52px;
+  width: 52px;
+  background-image: url("../../assest/image/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  cursor: pointer;
+}
+.pets__popap-text {
+  padding: 50px 20px 0 30px;
+  width: 350px;
+}
+.pets__popap-photo {
+  max-width: 500px;
+  width: 500px;
+}
+.pets__name-popap {
+  color: #000;
+}
+.pets__type {
+  color: #000;
+  margin: 10px 0 40px;
+}
+.pets__description {
+  font-family: "Georgia Regular";
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 40px;
+}
+.pets__option-text,
+.pets__option-answer {
+  color: #000;
+  font-family: "Georgia Regular";
+  font-size: 15px;
+}
+.pets__option {
+  margin: 5px 0;
+  position: relative;
+}
+.pets__option::after {
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: #f1cdb3;
+}
+.pets__slider.open ~ .pets__bg {
+  display: block;
+}
 /* pets */
 /* help */
 .help {
